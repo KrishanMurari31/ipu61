@@ -1,0 +1,287 @@
+<html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GGSIPU homepage recreation for learning and frontend practice">
+  <title>Guru Gobind Singh Indraprastha University</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="top-strip">
+    <div class="container top-strip-inner">
+      <a href="#" class="popup-trigger">Government of NCT of Delhi</a>
+      <div class="top-links">
+        <a href="#main-content">Skip to main content</a>
+        <a href="#contact">Contact</a>
+        <button id="font-down" aria-label="Decrease text size">A-</button>
+        <button id="font-up" aria-label="Increase text size">A+</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <d iv class="container branding">
+      <a class="logo-mark" href="#" aria-label="GGSIPU home">
+        <img src="GGS.jpg" alt="GGSIPU Logo" class="logo-image">
+      </a>
+      <div class="university-title">
+        <h1>Guru Gobind Singh Indraprastha University</h1>
+        <p>गुरु गोबिंद सिंह इंद्रप्रस्थ विश्वविद्यालय</p>
+        <p class="address-line">Sector 16-C, Dwarka, New Delhi – 110078</p>
+      </div>
+      <div class="header-badge">
+        <strong>NAAC</strong>
+        <span>A++ Grade</span>
+        <small>Accredited University</small>
+      </div>
+    </div>
+  </header>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false">☰ Menu</button>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#">Home</a></li>
+        <li class="has-menu"><a href="#about">About Us ▾</a>
+          <ul class="dropdown">
+            <li><a href="#about">About University</a></li>
+            <li><a href="#about">Vision and Mission</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </li>
+        <li class="has-menu"><a href="#academics">Academics ▾</a>
+          <ul class="dropdown">
+            <li><a href="#academics">University Schools</a></li>
+            <li><a href="#academics">Programs and Courses</a></li>
+            <li><a href="#academics">Academic Calendar</a></li>
+          </ul>
+        </li>
+        <li><a href="#admissions">Admissions</a></li>
+        <li><a href="#notices">Examinations</a></li>
+        <li><a href="#students">Students</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="announcement-bar">
+      <div class="container announcement-inner">
+
+        <span class="announcement-label">ANNOUNCEMENT</span>
+        <div class="announcement-track">
+
+          <a id="announcement-text" href="#admissions">
+            Admissions 2026-27: Visit the official university portal for updates and counselling information.
+          </a>
+        </div>
+
+        <a href="#notices">Read more →</a>
+
+      </div>
+    </section>
+
+    <section class="hero container" aria-label="University highlights">
+      <div class="hero-image" id="hero-image">
+        <div class="hero-overlay">
+          <span class="eyebrow">WELCOME TO GGSIPU</span>
+          <h2 id="slide-title">Learn. Discover. Achieve.</h2>
+          <p id="slide-description">A university committed to professional education, research and innovation.</p>
+          <a class="primary-button" href="#about">Explore University</a>
+        </div>
+        <button class="slider-arrow previous" id="prev-slide" aria-label="Previous slide">‹</button>
+        <button class="slider-arrow next" id="next-slide" aria-label="Next slide">›</button>
+        <div class="slider-dots" id="slider-dots" aria-label="Choose slide"></div>
+      </div>
+      <aside class="quick-panel">
+        <h2>Quick Links</h2>
+        <a href="#admissions"><span>▸</span> Admissions 2026-27</a>
+        <a href="#notices"><span>▸</span> Counselling / Admission</a>
+        <a href="#students"><span>▸</span> Examination Results</a>
+        <a href="#students"><span>▸</span> Online Fee Portal</a>
+        <a href="#contact"><span>▸</span> Grievance / Helpdesk</a>
+        <a href="#academics"><span>▸</span> University Schools</a>
+      </aside>
+    </section>
+
+    <section class="container feature-grid" id="admissions">
+      <a class="feature-card admission-card popup-trigger" href="#">
+        <span class="feature-icon">🎓</span>
+        <div>
+          <h3>Admissions 2026-27</h3>
+          <p>Programmes, counselling and application updates</p>
+        </div><span class="card-arrow">→</span>
+      </a>
+      <a class="feature-card exam-card" href="#students">
+        <span class="feature-icon">📄</span>
+        <div>
+          <h3>Examinations</h3>
+          <p>Datesheets, results and examination notices</p>
+        </div><span class="card-arrow">→</span>
+      </a>
+      <a class="feature-card accreditation-card popup-trigger" href="#about">
+        <span class="feature-icon">🏅</span>
+        <div>
+          <h3>NAAC A++</h3>
+          <p>University accreditation and achievements</p>
+        </div><span class="card-arrow">→</span>
+      </a>
+    </section>
+
+    <section class="container content-grid">
+      <section class="panel" id="notices">
+        <div class="section-heading">
+          <div><span class="eyebrow">STAY UPDATED</span>
+            <h2>Latest Notices / Circulars</h2>
+          </div><a href="#notices-list">View all →</a>
+        </div>
+        <ul class="notice-list" id="notices-list">
+          <li><span class="notice-date">18 OCT</span><a href="#notices"  class="popup-trigger">Notice regarding university academic and
+              administrative updates</a><span class="new-tag">NEW</span></li>
+          <li><span class="notice-date">16 OCT</span><a href="#notices"  class="popup-trigger">Examination notices and datesheet
+              information</a><span class="new-tag">NEW</span></li>
+          <li><span class="notice-date">13 OCT</span><a href="#notices"  class="popup-trigger">Student welfare activities and university
+              announcements</a></li>
+          <li><span class="notice-date">07 OCT</span><a href="#notices"  class="popup-trigger">Important information for students and
+              affiliated institutes</a></li>
+          <li><span class="notice-date">01 OCT</span><a href="#notices"  class="popup-trigger">Academic programmes and university circulars</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="panel" id="students">
+        <div class="section-heading">
+          <div><span class="eyebrow">STUDENT CORNER</span>
+            <h2>Student Services</h2>
+          </div>
+        </div>
+        <div class="service-list">
+          <a href="#students"  class="popup-trigger"><span class="service-icon">✓</span><span><strong>Exam Results
+                Portal</strong><small>Semester and annual results</small></span><b>→</b></a>
+          <a href="#students"  class="popup-trigger"><span class="service-icon">₹</span><span><strong>Online Fee
+                Portal</strong><small>Examination and academic fees</small></span><b>→</b></a>
+          <a href="#students"  class="popup-trigger"><span class="service-icon">✉</span><span><strong>Student Grievances</strong><small>Help
+                and grievance redressal</small></span><b>→</b></a>
+          <a href="#students"  class="popup-trigger"><span class="service-icon">♧</span><span><strong>Student Welfare</strong><small>Support,
+                activities and resources</small></span><b>→</b></a>
+        </div>
+      </section>
+    </section>
+
+    <section class="soft-section" id="academics">
+      <div class="container">
+        <div class="section-heading centered">
+          <div><span class="eyebrow">EXPLORE GGSIPU</span>
+            <h2>University Resources</h2>
+            <p>Find useful information, academic resources and university services.</p>
+          </div>
+        </div>
+        <div class="resource-grid">
+          <a class="resource-card popup-trigger" href="#academics"><span>🏛️</span>
+            <h3>University Schools</h3>
+            <p>Explore schools, departments and centres.</p>
+          </a>
+          <a class="resource-card popup-trigger" href="#academics"><span>📚</span>
+            <h3>Academics</h3>
+            <p>Programmes, syllabi and academic information.</p>
+          </a>
+          <a class="resource-card popup-trigger" href="#students"><span>🔬</span>
+            <h3>Research & Innovation</h3>
+            <p>Discover research and innovation initiatives.</p>
+          </a>
+          <a class="resource-card" href="#contact"><span>🤝</span>
+            <h3>Student Support</h3>
+            <p>Find support services and student resources.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container link-columns" id="about">
+      <div class="link-column popup-trigger">
+        <h2>Important Links</h2>
+        <a href="#about">IPU Samarth Login</a>
+        <a href="#about">Viksit Bharat @2047</a>
+        <a href="#about">Internal Complaint Committee (ICC)</a>
+        <a href="#about">Central Instrumentation Facility</a>
+        <a href="#about">Innovation & Incubation</a>
+        <a href="#about">AICTE IDEA Lab</a>
+        <a href="#about">Strategic Plan and Vision</a>
+      </div>
+      <div class="link-column">
+        <h2>For Students</h2>
+        <a href="#students">Examination Results</a>
+        <a href="#students">University Students Grievances</a>
+        <a href="#students">Online Fee Portal</a>
+        <a href="#students">Student's Welfare</a>
+        <a href="#students" class="popup-trigger">Alumni</a>
+        <a href="#students" class="popup-trigger">NCC / NSS</a>
+        <a href="#students" class="popup-trigger">Student Feedback System</a>
+      </div>
+      <div class="link-column">
+        <h2>About University</h2>
+        <p class="about-copy">Guru Gobind Singh Indraprastha University is a teaching and affiliating university established by the Government of NCT of Delhi. It promotes professional education, research and learning across diverse fields.</p>
+        <a class="text-link popup-trigger" href="#about">
+          Read more about the University →
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-main">
+      <div class="container footer-grid">
+        <div>
+          <div class="footer-brand">IPU <span>GGS Indraprastha University</span></div>
+          <p>Sector 16-C, Dwarka,<br>New Delhi – 110078, India</p>
+        </div>
+        <div>
+          <h3>Quick Navigation</h3>
+          <a href="#about">About Us</a>
+          <a href="#academics">Academics</a>
+          <a href="#notices">Notices / Circulars</a>
+        </div>
+        <div>
+          <h3>Useful Information</h3>
+          <a href="#contact">RTI</a>
+          <a href="#contact" class="popup-trigger">Disclaimer</a>
+          <a href="#contact" class="popup-trigger">Site Map</a>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <a href="#contact">University helpdesk</a>
+          <a href="https://www.ipu.ac.in/">Official website</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">© <span id="year"></span> Guru Gobind Singh Indraprastha University. Educational frontend recreation.</div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="back-top" aria-label="Back to top">↑</button>
+
+  <!-- Under Construction Popup -->
+
+  <div id="construction-popup" class="popup-overlay">
+    <div class="popup-box" role="dialog" aria-modal="true">
+      <button type="button" class="popup-close" id="popup-close">&times;</button>
+
+      <div class="popup-icon">🚧</div>
+      <h2>Page Under Construction</h2>
+      <p>This page is under construction.</p>
+
+      <button type="button" class="popup-button" id="popup-ok">
+        Okay
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
