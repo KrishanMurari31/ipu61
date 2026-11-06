@@ -7,7 +7,6 @@ pipeline {
     }
 
     stages {
-
         stage('Checkout') {
             steps {
                 echo 'Fetching source code from GitHub'
@@ -24,7 +23,6 @@ pipeline {
                     echo ERROR: index.html not found
                     exit /b 1
                 )
-
                 echo index.html found successfully
                 '''
             }
@@ -61,9 +59,19 @@ pipeline {
 
                 bat '''
                 robocopy "%WORKSPACE%" "C:\\Apache24\\htdocs" /E /XD .git .github /XF Jenkinsfile README.md
-
                 if %ERRORLEVEL% LEQ 7 exit /b 0
                 exit /b %ERRORLEVEL%
+                '''
+            }
+        }
+
+        stage('Launch Website') {
+            steps {
+                echo 'Website deployed successfully!'
+                echo 'Open http://localhost/ to view your website'
+
+                powershell '''
+                Start-Process "http://localhost/"
                 '''
             }
         }
