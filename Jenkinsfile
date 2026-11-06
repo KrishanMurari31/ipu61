@@ -79,7 +79,7 @@ pipeline {
     	success {
         	echo 'CI/CD Pipeline completed successfully!'
 
-	        bat 'schtasks /run /tn "Open IPU Website"'
+	        bat 'schtasks /run /tn "Open IPU Webpage"'
     	}
 
 	failure {
