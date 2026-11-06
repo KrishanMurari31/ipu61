@@ -70,7 +70,9 @@ pipeline {
                 echo 'Website deployed successfully!'
                 echo 'Open http://localhost/ to view your website'
 
-          
+                powershell '''
+                Start-Process "http://localhost/"
+                '''
             }
         }
     }
