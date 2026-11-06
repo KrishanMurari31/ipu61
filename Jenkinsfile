@@ -78,12 +78,14 @@ pipeline {
     }
 
     post {
-        success {
-            echo 'CI/CD Pipeline completed successfully!'
-        }
+    	success {
+        	echo 'CI/CD Pipeline completed successfully!'
 
-        failure {
-            echo 'CI/CD Pipeline failed. Check the console output.'
-        }
+	        bat 'schtasks /run /tn "Open IPU Website"'
+    	}
+
+	failure {
+        	echo 'CI/CD Pipeline failed. Check the console output.'
+    	}
     }
 }
