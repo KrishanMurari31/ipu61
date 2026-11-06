@@ -70,9 +70,7 @@ pipeline {
                 echo 'Website deployed successfully!'
                 echo 'Open http://localhost/ to view your website'
 
-                powershell '''
-                Start-Process "http://localhost/"
-                '''
+   
             }
         }
     }
@@ -81,7 +79,7 @@ pipeline {
     	success {
         	echo 'CI/CD Pipeline completed successfully!'
 
-	        bat 'schtasks /run /tn "Open IPU Webpage"'
+	        bat 'schtasks /run /tn "Open IPU webpage"'
     	}
 
 	failure {
